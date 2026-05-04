@@ -4,11 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Owen Jackson | WDD231</title>
+    <meta name="description" content="A home page for WDD231: Web Frontend Development I">
+    <meta name="author" content="Owen Jackson">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <img src="" alt="owen-logo" loading="lazy">
+        <h2>Owen Jackson</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+        <a id="menu" href="#" aria-label="Open navigation menu"></a>
+    </header>
 
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam similique incidunt tempora, quasi odio
+                nobis quam. Molestiae distinctio expedita qui. Odit laboriosam eos optio officia possimus dignissimos!
+                Id sint itaque rerum consectetur, quidem aliquam nisi, quod illum at deserunt suscipit saepe repellat
+                adipisci hic in quo delectus unde exercitationem. Quod.</p>
+        </section>
+
+        <section class="photo">
+            <h2>Owen Jackson</h2>
+            <img src="" alt="Owen Jackson" loading="lazy">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <button id="all-courses">All</button>
+            <button id="cse-courses">CSE</button>
+            <button id="wdd-courses">WDD</button>
+
+            <ul id="course-list">
+                <li class="course-item wdd">WDD 130</li>
+                <li class="course-item wdd">WDD 131</li>
+                <li class="course-item wdd">WDD 231</li>
+                <li class="course-item cse">CSEPC 110</li>
+                <li class="course-item cse">CSE 111</li>
+                <li class="course-item cse">CSE 210</li>
+            </ul>
+            <p>The total credits for the courses listed above is <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="">
+                <img src="" alt="LinkedIn Logo" loading="lazy">
+            </a>
+            <a href="">
+                <img src="" alt="GitHub Logo" loading="lazy">
+            </a>
+            <a href="">
+                <img src="" alt="Facebook Logo" loading="lazy">
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>
+                &copy;<span id="currentYear"></span> Owen Jackson, Arizona, USA
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 
 </html>
