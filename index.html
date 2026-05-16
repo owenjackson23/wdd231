@@ -13,12 +13,13 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/course.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
     <header>
         <img src="images/owen-logo.svg" alt="owen-logo" width="64" loading="lazy">
-        <h2>Owen Jackson</h2>
+        <h2><span>Owen Jackson</span></h2>
         <nav class="navigation">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -53,19 +54,13 @@
         <section class="courses">
             <h2>Web Certificate Courses</h2>
 
-            <button id="all-courses">All</button>
-            <button id="cse-courses">CSE</button>
-            <button id="wdd-courses">WDD</button>
+            <button id="all-filter">All</button>
+            <button id="cse-filter">CSE</button>
+            <button id="wdd-filter">WDD</button>
 
-            <ul id="course-list">
-                <li class="course-item wdd">WDD 130</li>
-                <li class="course-item wdd">WDD 131</li>
-                <li class="course-item wdd">WDD 231</li>
-                <li class="course-item cse">CSEPC 110</li>
-                <li class="course-item cse">CSE 111</li>
-                <li class="course-item cse">CSE 210</li>
-            </ul>
-            <p>The total credits for the courses listed above is <span id="total-credits">0</span></p>
+            <ul id="course-list"></ul>
+            <p>The total credits for the courses listed above is: <strong><span id="total-credits"></span></strong></p>
+            <p>You have completed <strong><span id="completed-credits"></span></strong> credits</p>
         </section>
     </main>
 
