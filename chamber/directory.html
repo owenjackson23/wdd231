@@ -18,12 +18,13 @@
     <!-- TODO: Add a favicon image -->
     <link rel="icon" href="">
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 </head>
 
 <body>
     <header>
         <div>
-            <img src="" alt="Chamber Logo" width="64" loading="lazy">
+            <img src="images/chamber-logo.svg" alt="Chamber Logo" width="64" loading="lazy">
             <span>Mesa Chamber of Commerce</span>
         </div>
         <nav class="navigation">
@@ -36,10 +37,12 @@
         </nav>
         <a id="menu" href="#" aria-label="Open navigation menu"></a>
     </header>
+
     <main>
-        <div class="card"></div>
+        <div id="cards"></div>
 
     </main>
+
     <footer>
         <div class="contact">
             <p><strong>Mesa Chamber of Commerce</strong></p>
@@ -48,7 +51,17 @@
             <p>*email*</p>
             <p>*phone number*</p>
         </div>
-        <div class="social-media"></div>
+        <nav class="social-media">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube-logo.svg" alt="YouTube Logo" width="64" loading="lazy">
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-logo.svg" alt="Facebook Logo" width="64" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn Logo" width="64" loading="lazy">
+            </a>
+        </nav>
         <div class="copyright">
             <p>WDD231 Class Project</p>
             <p>Owen Jackson</p>

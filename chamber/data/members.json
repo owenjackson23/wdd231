@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Capital Energy",
+            "address1": "1102 W. Southern Ave. #3",
+            "address2": "Tempe, AZ 85282",
+            "phone": "(480) 896-5847",
+            "website": "https://www.facebook.com/cptlenergy",
+            "level": 2,
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_222,w_768,x_0,y_0/f_auto/q_auto/f_auto/c_limit,h_100,w_250/q_auto/v1727125834/tenants/473bfff0-0a8b-4f57-b0c6-48ef32da5beb/dc39e72da7194863b3c7f27b77ad86e5/Captial-Energy.png"
+        },
+        {
+            "name": "Fiesta Lincoln",
+            "address1": "1720 S. Mesa Dr.,",
+            "address2": "Mesa, AZ 85210",
+            "phone": "(480) 813-4900",
+            "website": "http://www.fiestalincoln.com/",
+            "level": 3,
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/q_auto/f_auto/c_limit,h_300,w_300/f_auto/c_limit,h_100,w_250/q_auto/v1629304009/tenants/473bfff0-0a8b-4f57-b0c6-48ef32da5beb/8e865577dca347449ae7938dbc60ad39/1.png"
+        },
+        {
+            "name": "Girl Scouts Arizona Cactus-Pine Council",
+            "address1": "119 E. Coronado Rd.,",
+            "address2": "Phoenix, AZ 85004",
+            "phone": "(602) 452-7000",
+            "website": "http://www.girlscoutsaz.org/",
+            "level": 1,
+            "logo": "https://res.cloudinary.com/micronetonline/image/fetch/f_auto/c_limit,h_100,w_250/q_auto/https://chambermaster.blob.core.windows.net/images/customers/2547/members/9366/logos/MEMBER_LOGO/header.png"
+        },
+        {
+            "name": "Dental Care of Mesa",
+            "address1": "6610 E. Baseline Rd., Ste 104,",
+            "address2": "Mesa, AZ 85206",
+            "phone": "(480) 290-7777",
+            "website": "http://www.smilemesa.com/",
+            "level": 2,
+            "logo": "https://res.cloudinary.com/micronetonline/image/fetch/f_auto/c_limit,h_100,w_250/q_auto/https://chambermaster.blob.core.windows.net/images/customers/2547/members/32757/logos/MEMBER_LOGO/DentalCareOfMesa_logo_cmyk300dpi.jpg"
+        },
+        {
+            "name": "Imagine Prep Superstition",
+            "address1": "1843 W. 16th Ave.,",
+            "address2": "Apache Junction, AZ 85120",
+            "phone": "(480) 355-0530",
+            "website": "http://imagineprep.com/",
+            "level": 1,
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_156,w_171,x_0,y_0/f_auto/q_auto/f_auto/c_limit,h_100,w_250/q_auto/v1663778706/tenants/473bfff0-0a8b-4f57-b0c6-48ef32da5beb/3e076c2ea0dc467994dfff8372bd3431/Imagine-Prep.png"
+        },
+        {
+            "name": "DeNANCEA",
+            "address1": "1910 S. Stapley Dr. #120,",
+            "address2": "Mesa, AZ 85204",
+            "phone": "(928) 421-4289",
+            "website": "http://www.denancea.com/",
+            "level": 1,
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_1538,w_1905,x_518,y_773/f_auto/q_auto/f_auto/c_limit,h_100,w_250/q_auto/v1753121767/tenants/473bfff0-0a8b-4f57-b0c6-48ef32da5beb/a914cdd025c24cf5a789a4f98efe4adf/Logo1.jpg"
+        },
+        {
+            "name": "Arizona Disabled Sports",
+            "address1": "59 E. Broadway Rd.,",
+            "address2": "Mesa, AZ 85210",
+            "phone": "(480) 835-6273",
+            "website": "http://www.arizonadisabledsports.com/",
+            "level": 1,
+            "logo": "https://res.cloudinary.com/micronetonline/image/fetch/f_auto/c_limit,h_100,w_250/q_auto/https://chambermaster.blob.core.windows.net/images/customers/2547/members/42916/logos/MEMBER_LOGO/AZDS_Logo.png"
+        }
+    ]
+}
