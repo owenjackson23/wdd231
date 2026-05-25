@@ -1,8 +1,8 @@
 :root {
-    --clr-primary: #d51b1b;
-    --clr-accent: #1b7ed5;
+    --clr-primary: #b00000;
+    --clr-accent: #0b68ba;
     --bck-clr: #fff;
-    --bck-clr-accent: #eee;
+    --bck-clr-accent: #f9f9f9;
     --font-heading: 'Roboto', Arial, sans-serif;
     --font-text: Times, 'Times New Roman', serif;
 }
