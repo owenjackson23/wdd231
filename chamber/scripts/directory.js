@@ -1,6 +1,7 @@
 const url = 'data/members.json';
 const cards = document.getElementById('cards');
 
+// Fetches data
 async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
@@ -8,6 +9,7 @@ async function getMemberData() {
     displayMembers(data.members);
 }
 
+// Displays the member cards
 const displayMembers = (members) => {
     members.forEach((member) => {
         // Create elements for the card
@@ -47,8 +49,8 @@ const displayMembers = (members) => {
         }
 
         // Append elements to the card
-        card.appendChild(logo);
         card.appendChild(name);
+        card.appendChild(logo);
         card.appendChild(address1);
         card.appendChild(address2);
         card.appendChild(phone);

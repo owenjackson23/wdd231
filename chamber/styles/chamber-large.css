@@ -1,0 +1,35 @@
+@media (min-width: 760px) {
+
+    /* Navigation */
+    .navigation {
+        position: static;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        padding: .1rem .3rem;
+
+        border: 2px solid var(--clr-primary);
+        border-radius: .5rem;
+    }
+
+    .navigation a:hover {
+        text-decoration: none;
+        border-color: var(--clr-accent);
+    }
+
+    #menu {
+        display: none;
+    }
+}

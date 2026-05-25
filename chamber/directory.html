@@ -23,9 +23,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/grid-list.js" defer></script>
 </head>
 
 <body>
@@ -45,8 +47,14 @@
         <a id="menu" href="#" aria-label="Open navigation menu"></a>
     </header>
 
+    <h1>Directory</h1>
+    <div class="list-menu">
+        <button id="grid">Grid</button>
+        <button id="list">List</button>
+    </div>
+
     <main>
-        <div id="cards"></div>
+        <div id="cards" class="grid"></div>
 
     </main>
 

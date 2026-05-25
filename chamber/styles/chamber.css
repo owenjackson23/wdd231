@@ -1,10 +1,13 @@
 :root {
     --clr-primary: #d51b1b;
     --clr-accent: #1b7ed5;
+    --bck-clr: #fff;
+    --bck-clr-accent: #eee;
     --font-heading: 'Roboto', Arial, sans-serif;
     --font-text: Times, 'Times New Roman', serif;
 }
 
+/* Body styles */
 body {
     font-family: var(--font-text);
 }
@@ -13,6 +16,17 @@ h1,
 h2,
 h3 {
     font-family: var(--font-heading);
+}
+
+h1 {
+    width: fit-content;
+
+    margin: 0 auto 1rem;
+    padding: .1rem .3rem;
+
+    text-align: center;
+    color: var(--clr-primary);
+    border-bottom: 2px solid var(--clr-primary);
 }
 
 p {
@@ -43,9 +57,15 @@ header {
 
 header span {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    text-align: center;
 
     color: var(--clr-primary);
+}
+
+header,
+footer {
+    background-color: var(--bck-clr);
 }
 
 /* Footer styles */
@@ -60,6 +80,12 @@ footer {
     margin-top: 2rem;
 
     border-top: 3px solid var(--clr-primary);
+}
+
+.contact,
+.social-media,
+.copyright {
+    width: 225px;
 }
 
 footer p {
@@ -85,11 +111,11 @@ footer p {
 .navigation ul {
     margin: 0;
     padding: .5rem 1rem;
-    list-style: 0;
+    list-style: none;
 }
 
 .navigation.show {
-    background-color: #fff;
+    background-color: var(--bck-clr);
     border: 2px solid var(--clr-primary);
 
     position: absolute;
@@ -144,19 +170,34 @@ footer p {
     content: '×';
 }
 
-/* Card styles */
-.cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+/* List Menu styles */
+.list-menu {
+    margin: 0 auto;
+    text-align: center;
+
+    width: fit-content;
+
+    font-size: 1.2rem;
 }
 
-.card {
+/* Card  grid styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+.grid .card {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     max-width: 400px;
+    width: 80%;
 
     border: 1px solid var(--clr-accent);
     border-radius: .5rem;
@@ -164,29 +205,70 @@ footer p {
     padding: .5rem 1rem;
     margin: 1rem auto;
 
-    background-color: #eee;
+    background-color: var(--bck-clr-accent);
 }
 
-.card img {
-    display: none;
-    margin: 1rem auto;
+.grid .card img {
+    display: block;
+    margin: 0 auto 1rem;
 }
 
-.card h2,
-.card p,
-.card a {
+.grid .card h2,
+.grid .card a {
     text-align: center;
 }
 
-.card p,
-.card a {
-    margin: .5rem 0;
+.grid .card p {
+    width: 170px;
+
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
-.card .address {
+.grid .card a {
+    margin-top: auto;
+    margin-bottom: .5rem;
+    padding: .1rem .3rem;
+
+    border: 2px solid var(--clr-primary);
+    border-radius: .5rem;
+}
+
+.grid .card a:hover {
+    text-decoration: none;
+    border-color: var(--clr-accent);
+}
+
+.grid .card .address,
+.list .card .address {
     margin: 0;
 }
 
-.card .phone {
-    margin: 1rem 0 .5rem;
+.grid .card .phone {
+    margin-top: 1rem;
+}
+
+/* Card list styles */
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list .card {
+    display: block;
+    margin: 0 2rem;
+    padding: 0.25rem;
+}
+
+.list .card img {
+    display: none;
+}
+
+.list .card p,
+.list .card a {
+    margin-bottom: .5rem;
+}
+
+.list .card .phone {
+    margin-top: .5rem;
 }
