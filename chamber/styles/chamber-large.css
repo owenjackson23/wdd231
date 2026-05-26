@@ -1,5 +1,18 @@
 @media (min-width: 760px) {
 
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .copyright {
+        margin-left: 1rem;
+    }
+
     /* Navigation */
     .navigation {
         position: static;
