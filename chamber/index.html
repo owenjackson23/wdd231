@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa Chamber of Commerce</title>
+    <meta name="description"
+        content="Home page for the Mesa Chamber of Commerce. This page contains community information and business spotlights.">
+    <meta name="author" content="Owen Jackson">
+    <meta property="og:title" content="Home Page for the Mesa Chamber of Commerce">
+    <meta property="og:description"
+        content="A home page for the city of Mesa Chamber of Commerce. This page includes community information and business spotlights.">
+    <meta property="og:image" content="https://owenjackson23.github.io/wdd231/chamber/images/index-screenshot.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://owenjackson23.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/chamber-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/chamber-logo.svg" alt="Chamber Logo" width="64" loading="lazy">
+            <span>Mesa Chamber of Commerce</span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <a id="menu" href="#" aria-label="Open navigation menu"></a>
+    </header>
+
+    <main>
+        <!-- Hero Image -->
+        <h1>Mesa Chamber of Commerce</h1>
+        <div>
+            <section id="current-events"></section>
+            <section class="weather">
+                <div id="current-weather"></div>
+                <div id="forecast"></div>
+            </section>
+        </div>
+        <section id="spotlights">
+            <div class="spotlight"></div>
+            <div class="spotlight"></div>
+            <div class="spotlight"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p><strong>Mesa Chamber of Commerce</strong></p>
+            <p class="address">40 N Center St Suite 101,</p>
+            <p class="address">Mesa, AZ 85201</p>
+            <p>info@mesachamber.com</p>
+            <p>(480) 969-1307</p>
+        </div>
+        <nav class="social-media">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-logo.svg" alt="Facebook Logo" width="64" loading="lazy">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube-logo.svg" alt="YouTube Logo" width="64" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn Logo" width="64" loading="lazy">
+            </a>
+        </nav>
+        <div class="copyright">
+            <p>WDD231 Class Project</p>
+            <p>Owen Jackson</p>
+            <p>&copy;<span id="currentYear"></span> Mesa Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
