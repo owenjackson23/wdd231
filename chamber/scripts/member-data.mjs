@@ -1,8 +1,8 @@
-const url = 'data/members.json';
-const cards = document.getElementById('cards');
+export const url = 'data/members.json';
+export const cards = document.getElementById('cards');
 
 // Fetches data
-async function getMemberData() {
+export async function getMemberData() {
     const response = await fetch(url);
     const data = await response.json();
     // console.table(data.members);
@@ -10,7 +10,7 @@ async function getMemberData() {
 }
 
 // Displays the member cards
-const displayMembers = (members) => {
+export const displayMembers = (members) => {
     members.forEach((member) => {
         // Create elements for the card
         let card = document.createElement('section');
@@ -63,5 +63,3 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     });
 }
-
-getMemberData();
