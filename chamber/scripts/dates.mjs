@@ -3,5 +3,7 @@ const lastMod = document.getElementById('lastModified');
 
 const today = new Date();
 
-year.innerHTML = today.getFullYear();
-lastMod.innerHTML = document.lastModified;
+export function displayDates() {
+    year.innerHTML = today.getFullYear();
+    lastMod.innerHTML = document.lastModified;
+}
