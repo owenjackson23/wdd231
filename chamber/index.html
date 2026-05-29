@@ -23,8 +23,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <script src="scripts/dates.js" defer></script>
-    <script src="scripts/hamburger.js" defer></script>
+    <script type="module" src="scripts/index.mjs"></script>
 </head>
 
 <body>
@@ -45,10 +44,18 @@
     </header>
 
     <main>
-        <img class="hero" src="images/index-hero.jpg" alt="Rock Formation Image" width="800">
+        <img class="hero" src="images/index-hero.jpg" alt="Rock Formation Image" width="600">
+        <a id="call-to-action" href="join.html">Join Today!</a>
         <h1>Mesa Chamber of Commerce</h1>
         <div>
-            <section id="current-events"></section>
+            <section id="current-events">
+                <h2>Events</h2>
+                <p>June 5th: Music Night</p>
+                <p>June 6th: Community Potluck</p>
+                <p>June 10th: Summer Splash</p>
+                <p>June 13th: Art Festival</p>
+                <p>June 20th: Summer Movie Night</p>
+            </section>
             <section class="weather">
                 <div id="current-weather"></div>
                 <div id="forecast"></div>
