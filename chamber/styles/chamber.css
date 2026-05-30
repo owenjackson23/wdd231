@@ -3,6 +3,7 @@
     --clr-accent: #0b68ba;
     --bck-clr: #fff;
     --bck-clr-accent: #f9f9f9;
+    --border-primary: 2px solid var(--clr-primary);
     --font-heading: 'Roboto', Arial, sans-serif;
     --font-text: Times, 'Times New Roman', serif;
 }
@@ -26,7 +27,7 @@ h1 {
 
     text-align: center;
     color: var(--clr-primary);
-    border-bottom: 2px solid var(--clr-primary);
+    border-bottom: var(--border-primary);
 }
 
 p {
@@ -120,7 +121,7 @@ footer .address {
 
 .navigation.show {
     background-color: var(--bck-clr);
-    border: 2px solid var(--clr-primary);
+    border: var(--border-primary);
 
     position: absolute;
     right: 0;
@@ -154,7 +155,7 @@ footer .address {
     line-height: 1;
 
     color: var(--clr-primary);
-    border: 2px solid var(--clr-primary);
+    border: var(--border-primary);
     border-radius: .5rem;
 
     width: 2.5rem;
@@ -182,6 +183,40 @@ footer .address {
     width: fit-content;
 
     font-size: 1.2rem;
+}
+
+/* Hero image styles */
+.hero-container {
+    width: 100vw;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    position: relative;
+}
+
+.hero-container .hero {
+    width: 100%;
+    display: block;
+}
+
+#call-to-action {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    z-index: 2;
+
+    background-color: var(--bck-clr);
+
+    border: var(--border-primary);
+    border-radius: .5rem;
+
+    padding: .1rem .3rem;
+}
+
+#call-to-action:hover {
+    text-decoration: none;
+    border-color: var(--clr-accent);
 }
 
 /* Card  grid styles */
