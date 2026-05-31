@@ -178,7 +178,7 @@ footer .address {
 
 /* Hero image styles */
 .hero-container {
-    width: 100vw;
+    width: 100%;
     max-width: 800px;
 
     margin: 0 auto;
@@ -194,8 +194,8 @@ footer .address {
 
 #call-to-action {
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom: 4%;
+    right: 4%;
     z-index: 2;
 
     background-color: var(--bck-clr);
@@ -204,6 +204,8 @@ footer .address {
     border-radius: .5rem;
 
     padding: .1rem .3rem;
+
+    font-size: 1.5rem;
 }
 
 #call-to-action:hover {
@@ -224,7 +226,7 @@ footer .address {
 /* Card  grid styles */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 
     width: 90%;
@@ -254,26 +256,30 @@ footer .address {
     background-color: var(--bck-clr-accent);
 }
 
-.grid .card img {
+.grid .card img,
+.spotlights .card img {
     display: block;
     margin: 0 auto 1rem;
 }
 
 .grid .card h2,
 .grid .card a,
-.home-cards .card,
-.spotlights .card {
+.home-cards .card h2,
+.spotlights .card h2,
+.spotlights .card a {
     text-align: center;
 }
 
-.grid .card p {
+.grid .card p,
+.spotlights .card p {
     width: 170px;
 
     margin-bottom: 1rem;
     text-align: left;
 }
 
-.grid .card a {
+.grid .card a,
+.spotlights .card a {
     margin-top: auto;
     margin-bottom: .5rem;
     padding: .1rem .3rem;
@@ -282,17 +288,20 @@ footer .address {
     border-radius: .5rem;
 }
 
-.grid .card a:hover {
+.grid .card a:hover,
+.spotlights .card a:hover {
     text-decoration: none;
     border-color: var(--clr-accent);
 }
 
 .grid .card .address,
-.list .card .address {
+.list .card .address,
+.spotlights .card .address {
     margin: 0;
 }
 
-.grid .card .phone {
+.grid .card .phone,
+.spotlights .card .phone {
     margin-top: 1rem;
 }
 
@@ -338,7 +347,23 @@ footer .address {
     margin: 0 auto;
 }
 
+.home-cards .card h2 {
+    padding: .2rem .4rem;
+
+    background-color: var(--clr-primary);
+    color: var(--bck-clr);
+
+    border-radius: .5rem;
+}
+
 .home-cards .card p,
 .spotlights .card p {
     margin-bottom: 1rem;
+}
+
+#divider {
+    width: 80%;
+    height: 2px;
+    background-color: var(--clr-primary);
+    margin: 2rem auto;
 }

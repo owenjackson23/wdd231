@@ -1,6 +1,6 @@
-import { getMemberData } from "./member-data.mjs";
+import { getMemberData, getSpecialMembers } from "./member-data.mjs";
 
-const cards = document.getElementById('cards');
+const cards = document.querySelector('.cards');
 
 // Creates and displays the member cards
 const displayMembers = (members) => {
@@ -61,4 +61,10 @@ const displayMembers = (members) => {
 export async function displayMemberCards() {
     const data = await getMemberData();
     displayMembers(data.members);
+}
+
+// Gets the special members data and displays the cards
+export async function displaySpotlights() {
+    const specialMembers = await getSpecialMembers();
+    displayMembers(specialMembers);
 }

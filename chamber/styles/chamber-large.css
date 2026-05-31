@@ -35,6 +35,8 @@
 
         border: 2px solid var(--clr-primary);
         border-radius: .5rem;
+
+        font-size: 1.2rem;
     }
 
     .navigation a:hover {
@@ -47,15 +49,23 @@
     }
 
     /* Home cards */
-    .home-cards .card {
-        grid-template: repeat(12, 1fr) / 1fr 1fr;
+    .home-cards {
+        display: flex;
+        flex-direction: row;
+
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
-    #current-events {
-        grid-column: span 6;
+    /* #current-events {
+        width: 50%;
     }
 
     #current-weather {
-        grid-column: span 3;
+        width: 25%;
     }
+
+    #forecast {
+        width: 25%;
+    } */
 }
