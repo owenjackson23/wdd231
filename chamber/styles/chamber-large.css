@@ -45,4 +45,17 @@
     #menu {
         display: none;
     }
+
+    /* Home cards */
+    .home-cards .card {
+        grid-template: repeat(12, 1fr) / 1fr 1fr;
+    }
+
+    #current-events {
+        grid-column: span 6;
+    }
+
+    #current-weather {
+        grid-column: span 3;
+    }
 }

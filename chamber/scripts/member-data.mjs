@@ -6,3 +6,7 @@ export const getMemberData = async () => {
     const data = await response.json();
     return data;
 }
+
+export const getHigherMembers = async () => {
+    const data = getMemberData();
+}

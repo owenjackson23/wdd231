@@ -4,6 +4,7 @@
     --bck-clr: #fff;
     --bck-clr-accent: #f9f9f9;
     --border-primary: 2px solid var(--clr-primary);
+    --border-accent: 1px solid var(--clr-accent);
     --font-heading: 'Roboto', Arial, sans-serif;
     --font-text: Times, 'Times New Roman', serif;
 }
@@ -175,22 +176,13 @@ footer .address {
     content: '×';
 }
 
-/* List Menu styles */
-.list-menu {
-    margin: 0 auto;
-    text-align: center;
-
-    width: fit-content;
-
-    font-size: 1.2rem;
-}
-
 /* Hero image styles */
 .hero-container {
     width: 100vw;
     max-width: 800px;
 
     margin: 0 auto;
+    margin-bottom: 2rem;
 
     position: relative;
 }
@@ -219,6 +211,16 @@ footer .address {
     border-color: var(--clr-accent);
 }
 
+/* List Menu styles */
+.list-menu {
+    margin: 0 auto;
+    text-align: center;
+
+    width: fit-content;
+
+    font-size: 1.2rem;
+}
+
 /* Card  grid styles */
 .grid {
     display: grid;
@@ -231,18 +233,23 @@ footer .address {
 }
 
 .grid .card {
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+.grid .card,
+.home-cards .card,
+.spotlights .card {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    max-width: 400px;
     width: 80%;
 
     border: 1px solid var(--clr-accent);
     border-radius: .5rem;
 
     padding: .5rem 1rem;
-    margin: 1rem auto;
 
     background-color: var(--bck-clr-accent);
 }
@@ -253,7 +260,9 @@ footer .address {
 }
 
 .grid .card h2,
-.grid .card a {
+.grid .card a,
+.home-cards .card,
+.spotlights .card {
     text-align: center;
 }
 
@@ -310,4 +319,26 @@ footer .address {
 
 .list .card .phone {
     margin-top: .5rem;
+}
+
+/* Home cards styles */
+.home-cards {
+    margin-bottom: 1rem;
+}
+
+.home-cards,
+.spotlights {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home-cards .card,
+.spotlights .card {
+    margin: 0 auto;
+}
+
+.home-cards .card p,
+.spotlights .card p {
+    margin-bottom: 1rem;
 }
