@@ -45,18 +45,25 @@ h1 {
 }
 
 /* Header style */
-header,
-.navigation a {
+header {
     color: var(--clr-background);
     background-color: var(--clr-primary);
-}
 
-header {
     border-bottom: 1px solid var(--clr-typeface);
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
+    padding: .5rem 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: .5rem;
 }
 
 .navigation a {
@@ -64,15 +71,77 @@ header {
 }
 
 .navigation a:hover {
-    color: var(--clr-typeface);
-    background-color: var(--clr-background);
+    color: var(--clr-secondary);
+}
 
-    border: 2px solid var(--clr-typeface);
-    border-radius: .2rem;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: .5rem;
+    padding: 0;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: .5rem 1rem;
+    list-style: none;
+}
+
+.navigation.show {
+    background-color: var(--clr-background);
+    border: 2px solid var(--clr-secondary);
+
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    margin-top: 100px;
+    margin-right: 16px;
 }
 
 .navigation li {
+    display: none;
     list-style: none;
+    border: none;
+}
+
+.show li {
+    display: block;
+    text-align: left;
+
+    padding: .2rem 0;
+}
+
+/* Hamburger menu styles */
+#menu {
+    display: block;
+}
+
+#menu::before {
+    content: '≡';
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+
+    color: var(--clr-secondary);
+    border: 2px solid var(--clr-secondary);
+    border-radius: .5rem;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu:hover:before {
+    color: var(--clr-background);
+    border-color: var(--clr-background);
+}
+
+#menu.show::before {
+    content: '×';
 }
 
 /* Main style */
@@ -132,7 +201,6 @@ h1+p {
 footer {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     align-items: center;
     gap: 1rem;
 
