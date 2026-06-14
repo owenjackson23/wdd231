@@ -139,9 +139,10 @@ footer .address {
 
 .show li {
     display: block;
-    text-align: left;
+    text-align: center;
+    padding: .2rem .3rem;
 
-    padding: .2rem;
+    border-radius: .2rem;
 }
 
 .current {
