@@ -51,7 +51,7 @@
             "address2": "Mesa, AZ 85204",
             "phone": "(928) 421-4289",
             "website": "http://www.denancea.com/",
-            "level": 1,
+            "level": 2,
             "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_1538,w_1905,x_518,y_773/f_auto/q_auto/f_auto/c_limit,h_100,w_250/q_auto/v1753121767/tenants/473bfff0-0a8b-4f57-b0c6-48ef32da5beb/a914cdd025c24cf5a789a4f98efe4adf/Logo1.jpg"
         },
         {
@@ -60,8 +60,53 @@
             "address2": "Mesa, AZ 85210",
             "phone": "(480) 835-6273",
             "website": "http://www.arizonadisabledsports.com/",
-            "level": 2,
+            "level": 1,
             "logo": "https://res.cloudinary.com/micronetonline/image/fetch/f_auto/c_limit,h_100,w_250/q_auto/https://chambermaster.blob.core.windows.net/images/customers/2547/members/42916/logos/MEMBER_LOGO/AZDS_Logo.png"
+        },
+        {
+            "name": "Rover Realty",
+            "address1": "7510 E. Main St.,",
+            "address2": "Mesa, AZ 85207",
+            "phone": "(602) 782-2444",
+            "website": "https://www.roverrealty.net/",
+            "level": 2,
+            "logo": "https://chambermaster.blob.core.windows.net/images/customers/2547/members/43683/logos/MEMBER_LOGO/Team_Rover__Logo_VERT_SML.jpg"
+        },
+        {
+            "name": "BAERHQ",
+            "address1": "4539 N. 22nd St., Ste R,",
+            "address2": "Phoenix, AZ 85016",
+            "phone": "(623) 224-8255",
+            "website": "https://www.baerhq.com/phoenix-metro",
+            "level": 3,
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/f_auto/c_crop,h_500,w_500,x_0,y_0/q_auto/v1777240819/tenants/473bfff0-0a8b-4f57-b0c6-48ef32da5beb/409cb6cbdb024ddbb9054c87564364a8/1.jpg"
+        },
+        {
+            "name": "Semper Fi Heating and Cooling",
+            "address1": "1335 S. Clearwater Ave,",
+            "address2": "Mesa, AZ 85209",
+            "phone": "(480) 616-3636",
+            "website": "https://www.semperfiheatingcooling.com/",
+            "level": 3,
+            "logo": "https://res.cloudinary.com/micronetonline/image/upload/c_crop,h_246,w_504,x_0,y_0/f_auto/q_auto/v1724186603/tenants/473bfff0-0a8b-4f57-b0c6-48ef32da5beb/32e8c05fb23946c89a28e627ca4e4568/semper-fi-web-transparent.png"
+        },
+        {
+            "name": "Paz de Cristo",
+            "address1": "424 W. Broadway Rd.,",
+            "address2": "Mesa, AZ 85210",
+            "phone": "(480) 464-2370",
+            "website": "https://pazdecristo.org/",
+            "level": 1,
+            "logo": "https://chambermaster.blob.core.windows.net/images/customers/2547/members/28229/logos/MEMBER_LOGO/PdC_logo_Purple_words_(3).png"
+        },
+        {
+            "name": "Mesa United Way",
+            "address1": "137 E. University Dr.,",
+            "address2": "Mesa, AZ 85201",
+            "phone": "(480) 969-8601",
+            "website": "https://www.mesaunitedway.org/",
+            "level": 1,
+            "logo": "https://chambermaster.blob.core.windows.net/images/customers/2547/members/555/logos/MEMBER_LOGO/MUW_Logo_Long_Icon.jpg"
         }
     ]
 }
