@@ -44,6 +44,18 @@
         border-color: var(--clr-accent);
     }
 
+    .current {
+        background-color: transparent;
+    }
+
+    .current a {
+        background-color: var(--clr-primary);
+    }
+
+    .current a:hover {
+        background-color: var(--clr-accent);
+    }
+
     #menu {
         display: none;
     }
