@@ -1,3 +1,5 @@
+import pointsOfInterest from "../data/discover-data.mjs";
+
 const cards = document.querySelector('.cards');
 
 // Creates and displays the member cards
@@ -7,48 +9,52 @@ const displayPOI = (pointsOfInterest) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let image = document.createElement('figure');
+        let photo = document.createElement('img');
+        let caption = document.createElement('figcaption');
         let address = document.createElement('address');
         let description = document.createElement('p');
         let learnMore = document.createElement('button');
 
         // Set attributes and content
-        logo.setAttribute('src', member.logo);
-        logo.setAttribute('alt', `${member.name} Logo`);
-        logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '150');
-        logo.setAttribute('height', 'auto');
-        name.innerHTML = member.name;
-        address1.innerHTML = member.address1;
-        address1.classList.add('address');
-        address2.innerHTML = member.address2;
-        address2.classList.add('address');
-        phone.innerHTML = member.phone;
-        phone.classList.add('phone');
-        website.setAttribute('href', member.website);
-        website.innerHTML = `Visit Website`;
+        name.innerHTML = poi.name;
+        photo.setAttribute('src', poi.photo);
+        photo.setAttribute('alt', `${poi.name} Photo`);
+        photo.setAttribute('loading', 'lazy');
+        photo.setAttribute('width', '300');
+        photo.setAttribute('height', 'auto');
+        caption.innerHTML = `Photo Credit: <a href="${poi.creditLink}">${poi.photoCredit}</a>`;
+        address.innerHTML = `${poi.address1}<br>${poi.address2}`;
+        description.innerHTML = `${poi.description}`;
+        learnMore.setAttribute('type', 'button');
+        learnMore.setAttribute('value', "Learn More!");
 
-        if (member.level >= 3) {
-            level.innerHTML = "Membership: Gold";
-        }
-        else if (member.level === 2) {
-            level.innerHTML = "Membership: Silver";
-        }
-        else {
-            level.innerHTML = "Membership: Member";
-        }
+        //Append elements to figure
+        figure.appendChild(photo);
+        figure.appendChild(caption);
 
         // Append elements to the card
         card.appendChild(name);
-        card.appendChild(logo);
-        card.appendChild(address1);
-        card.appendChild(address2);
-        card.appendChild(phone);
-        card.appendChild(level);
-        card.appendChild(website);
+        card.appendChild(figure);
+        card.appendChild(address);
+        card.appendChild(description);
+        card.appendChild(learnMore);
 
         card.classList.add('card');
 
         // Append the card to the cards container
         cards.appendChild(card);
     });
+}
+
+// Fetches data
+const getPointsOfInterest = async () => {
+    const response = await pointsOfInterest;
+    const data = await response.json();
+    return data;
+}
+
+// Gets the point of interest data and displays the cards
+export async function displayDiscoverCards() {
+    const data = await getPointsOfInterest();
+    displayPOI(data);
 }
