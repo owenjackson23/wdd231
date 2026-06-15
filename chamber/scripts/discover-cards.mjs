@@ -1,14 +1,12 @@
-import pointsOfInterest from "../data/discover-data.mjs";
-
 const cards = document.querySelector('.cards');
 
 // Creates and displays the member cards
-const displayPOI = (pointsOfInterest) => {
+export const displayDiscoverCards = (pointsOfInterest) => {
     pointsOfInterest.forEach((poi) => {
         // Create elements for the card
         let card = document.createElement('section');
         let name = document.createElement('h2');
-        let image = document.createElement('figure');
+        let figure = document.createElement('figure');
         let photo = document.createElement('img');
         let caption = document.createElement('figcaption');
         let address = document.createElement('address');
@@ -26,7 +24,7 @@ const displayPOI = (pointsOfInterest) => {
         address.innerHTML = `${poi.address1}<br>${poi.address2}`;
         description.innerHTML = `${poi.description}`;
         learnMore.setAttribute('type', 'button');
-        learnMore.setAttribute('value', "Learn More!");
+        learnMore.innerHTML = `Learn More!`;
 
         //Append elements to figure
         figure.appendChild(photo);
@@ -44,17 +42,4 @@ const displayPOI = (pointsOfInterest) => {
         // Append the card to the cards container
         cards.appendChild(card);
     });
-}
-
-// Fetches data
-const getPointsOfInterest = async () => {
-    const response = await pointsOfInterest;
-    const data = await response.json();
-    return data;
-}
-
-// Gets the point of interest data and displays the cards
-export async function displayDiscoverCards() {
-    const data = await getPointsOfInterest();
-    displayPOI(data);
 }
