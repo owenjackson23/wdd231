@@ -64,6 +64,11 @@ button:hover {
     border-color: var(--clr-accent);
 }
 
+address {
+    margin: 0;
+    text-align: left;
+}
+
 /* Header styles */
 header {
     display: flex;
@@ -297,10 +302,13 @@ footer .address {
 }
 
 .grid .card p,
-.spotlights .card p {
-    width: 170px;
+.grid .card address,
+.spotlights .card p,
+.spotlights .card address {
+    width: 100%;
 
-    margin-bottom: 1rem;
+    margin: 0 1rem 1rem;
+    align-self: flex-start;
     text-align: left;
 }
 
@@ -309,12 +317,6 @@ footer .address {
     margin-top: auto;
     margin-bottom: .5rem;
     padding: .1rem .3rem;
-}
-
-.grid .card .address,
-.list .card .address,
-.spotlights .card .address {
-    margin: 0;
 }
 
 .grid .card .phone,
