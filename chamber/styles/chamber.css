@@ -260,7 +260,7 @@ footer .address {
 /* Card  grid styles */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 
     width: 90%;
@@ -275,19 +275,24 @@ footer .address {
 
 .grid .card,
 .home-cards .card,
-.spotlights .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    width: 80%;
-
+.spotlights .card,
+.discover .card {
     border: 1px solid var(--clr-accent);
     border-radius: .5rem;
 
     padding: .5rem 1rem;
 
     background-color: var(--bck-clr-accent);
+}
+
+.grid .card,
+.home-cards .card,
+.spotlights .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 80%;
 }
 
 .grid .card img,
@@ -317,7 +322,8 @@ footer .address {
 }
 
 .grid .card button,
-.spotlights .card button {
+.spotlights .card button,
+.discover .card button {
     margin-top: auto;
     margin-bottom: .5rem;
     padding: .1rem .3rem;
@@ -370,8 +376,7 @@ footer .address {
     margin: 0 auto;
 }
 
-.home-cards .card h2,
-.discover .card h2 {
+.home-cards .card h2 {
     padding: .2rem .4rem;
 
     background-color: var(--clr-primary);
@@ -393,11 +398,63 @@ footer .address {
 }
 
 /* Discover cards styles */
+.discover .card {
+    width: 300px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    margin: 1rem auto;
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "address"
+        "description";
+}
+
+.discover .card h2 {
+    grid-area: name;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.discover .card figure {
+    grid-area: photo;
+    margin: 0 auto 1rem;
+}
+
+.discover .card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.discover .card figcaption {
+    margin-left: 12px;
+    font-size: .8em;
+}
+
 .discover .card p,
 .discover .card address {
-    width: 250px;
+    width: 80%;
+}
+
+.discover .card p {
+    grid-area: description;
+    margin: 1rem auto;
 }
 
 .discover .card address {
-    margin-bottom: .5rem;
+    grid-area: address;
+    margin: 0 auto;
+}
+
+.discover .card button {
+    width: 100px;
+
+    margin: .5rem auto;
 }
