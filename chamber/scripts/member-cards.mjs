@@ -19,7 +19,7 @@ const displayMembers = (members) => {
         logo.setAttribute('src', member.logo);
         logo.setAttribute('alt', `${member.name} Logo`);
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '150');
+        logo.setAttribute('width', '200');
         logo.setAttribute('height', 'auto');
         name.innerHTML = member.name;
         address.innerHTML = `${member.address1}<br>${member.address2}`;

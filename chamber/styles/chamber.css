@@ -305,11 +305,14 @@ footer .address {
 .grid .card address,
 .spotlights .card p,
 .spotlights .card address {
-    width: 100%;
+    width: 200px;
 
-    margin: 0 1rem 1rem;
-    align-self: flex-start;
+    margin: 0 2rem;
     text-align: left;
+}
+
+.grid .card p {
+    margin-bottom: 1rem;
 }
 
 .grid .card button,
