@@ -41,6 +41,9 @@ export function getDaysSinceVisit() {
         }
 
         // Display number of days passed
+        else if (diffDays === 1) {
+            message = `You last visited ${diffDays} day ago.`;
+        }
         else {
             message = `You last visited ${diffDays} days ago.`;
         }
