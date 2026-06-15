@@ -35,14 +35,33 @@ p {
     margin: 0;
 }
 
-a {
+a,
+button {
     color: var(--clr-primary);
     text-decoration: none;
 }
 
-a:hover {
+button {
+    background-color: var(--bck-clr);
+    color: var(--clr-primary);
+
+    border: var(--border-primary);
+    border-radius: .5rem;
+
+    text-align: center;
+}
+
+a:hover,
+button:hover {
     color: var(--clr-accent);
+}
+
+a:hover {
     text-decoration: underline;
+}
+
+button:hover {
+    border-color: var(--clr-accent);
 }
 
 /* Header styles */
@@ -229,7 +248,7 @@ footer .address {
 
     width: fit-content;
 
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 /* Card  grid styles */
@@ -272,10 +291,8 @@ footer .address {
 }
 
 .grid .card h2,
-.grid .card a,
 .home-cards .card h2,
-.spotlights .card h2,
-.spotlights .card a {
+.spotlights .card h2 {
     text-align: center;
 }
 
@@ -287,20 +304,11 @@ footer .address {
     text-align: left;
 }
 
-.grid .card a,
-.spotlights .card a {
+.grid .card button,
+.spotlights .card button {
     margin-top: auto;
     margin-bottom: .5rem;
     padding: .1rem .3rem;
-
-    border: 2px solid var(--clr-primary);
-    border-radius: .5rem;
-}
-
-.grid .card a:hover,
-.spotlights .card a:hover {
-    text-decoration: none;
-    border-color: var(--clr-accent);
 }
 
 .grid .card .address,
@@ -331,7 +339,7 @@ footer .address {
 }
 
 .list .card p,
-.list .card a {
+.list .card button {
     margin-bottom: .5rem;
 }
 

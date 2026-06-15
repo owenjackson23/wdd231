@@ -12,6 +12,7 @@ const displayMembers = (members) => {
         let address2 = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
+        let visitWebsite = document.createElement('button');
         let level = document.createElement('p');
         let logo = document.createElement('img');
 
@@ -29,7 +30,8 @@ const displayMembers = (members) => {
         phone.innerHTML = member.phone;
         phone.classList.add('phone');
         website.setAttribute('href', member.website);
-        website.innerHTML = `Visit Website`;
+        visitWebsite.setAttribute('type', 'button')
+        visitWebsite.innerHTML = `Visit Website`;
 
         if (member.level >= 3) {
             level.innerHTML = "Membership: Gold";
@@ -40,6 +42,9 @@ const displayMembers = (members) => {
         else {
             level.innerHTML = "Membership: Member";
         }
+
+        // Append button to anchor tag
+        website.appendChild(visitWebsite);
 
         // Append elements to the card
         card.appendChild(name);
