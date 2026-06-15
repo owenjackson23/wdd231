@@ -11,6 +11,7 @@ export const displayDiscoverCards = (pointsOfInterest) => {
         let caption = document.createElement('figcaption');
         let address = document.createElement('address');
         let description = document.createElement('p');
+        let website = document.createElement('a');
         let learnMore = document.createElement('button');
 
         // Set attributes and content
@@ -23,19 +24,23 @@ export const displayDiscoverCards = (pointsOfInterest) => {
         caption.innerHTML = `Photo Credit: <a href="${poi.creditLink}">${poi.photoCredit}</a>`;
         address.innerHTML = `${poi.address1}<br>${poi.address2}`;
         description.innerHTML = `${poi.description}`;
+        website.setAttribute('href', poi.website);
         learnMore.setAttribute('type', 'button');
         learnMore.innerHTML = `Learn More!`;
 
-        //Append elements to figure
+        // Append elements to figure
         figure.appendChild(photo);
         figure.appendChild(caption);
+
+        // Append button to anchor tag
+        website.appendChild(learnMore);
 
         // Append elements to the card
         card.appendChild(name);
         card.appendChild(figure);
         card.appendChild(address);
         card.appendChild(description);
-        card.appendChild(learnMore);
+        card.appendChild(website);
 
         card.classList.add('card');
 
