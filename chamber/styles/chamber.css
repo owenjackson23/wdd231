@@ -454,7 +454,7 @@ footer .address {
     margin: 0 auto;
 }
 
-.discover .card button {
+.discover .card a {
     grid-area: button;
     margin: .5rem auto;
 
