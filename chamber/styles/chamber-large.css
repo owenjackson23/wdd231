@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
     /* Navigation */
     .navigation {
@@ -86,5 +86,33 @@
     #divider {
         display: none;
         margin: 0;
+    }
+
+    /* Discover cards */
+    .discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+
+        margin: 2rem;
+    }
+
+    .discover .card {
+        width: 100%;
+
+        grid-template-areas:
+            "name"
+            "photo"
+            "address"
+            "description"
+            "button";
+    }
+
+    .discover .card address {
+        text-align: left;
+    }
+
+    .discover .card figcaption {
+        margin-left: 0;
     }
 }

@@ -413,7 +413,8 @@ footer .address {
         "name"
         "photo"
         "address"
-        "description";
+        "description"
+        "button";
 }
 
 .discover .card h2 {
@@ -454,7 +455,8 @@ footer .address {
 }
 
 .discover .card button {
-    width: 100px;
-
+    grid-area: button;
     margin: .5rem auto;
+
+    width: 100px;
 }

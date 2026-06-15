@@ -30,4 +30,25 @@
         display: none;
         margin: 0;
     }
+
+    /* Discover cards styles */
+    .discover .card {
+        width: 80%;
+
+        grid-template-areas:
+            "name name"
+            "address address"
+            "photo description"
+            "button button";
+    }
+
+    .discover .card img {
+        width: 300px;
+
+        margin-top: 1rem;
+    }
+
+    .discover .card address {
+        text-align: center;
+    }
 }
