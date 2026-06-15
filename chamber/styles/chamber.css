@@ -64,11 +64,6 @@ button:hover {
     border-color: var(--clr-accent);
 }
 
-address {
-    margin: 0;
-    text-align: left;
-}
-
 /* Header styles */
 header {
     display: flex;
@@ -171,6 +166,7 @@ footer .address {
 
 .current {
     background-color: var(--clr-primary);
+    color: var(--bck-clr);
 }
 
 .current a {
@@ -254,6 +250,11 @@ footer .address {
     width: fit-content;
 
     font-size: 1.4rem;
+}
+
+.list-menu .current:hover {
+    background-color: var(--clr-accent);
+    color: var(--bck-clr);
 }
 
 /* Card  grid styles */

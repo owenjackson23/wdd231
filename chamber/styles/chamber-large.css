@@ -60,6 +60,11 @@
         display: none;
     }
 
+    /* List Menu */
+    .list-menu .current {
+        background-color: var(--clr-primary);
+    }
+
     /* Home cards */
     .home-cards {
         margin-bottom: 2rem;
