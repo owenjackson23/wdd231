@@ -76,7 +76,8 @@ header {
 }
 
 .navigation a:hover {
-    text-decoration: solid;
+    border-left-color: var(--clr-primary);
+    border-right-color: var(--clr-primary);
 }
 
 .navigation {
