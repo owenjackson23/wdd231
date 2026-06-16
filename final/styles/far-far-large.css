@@ -41,15 +41,11 @@
         color: var(--clr-primary);
         background-color: var(--clr-background);
 
-        border: 2px solid transparent;
-        border-radius: .5rem;
-
         font-size: 1.2rem;
     }
 
     .navigation a:hover {
         text-decoration: none;
-        /* color: var(--clr-background); */
         border-color: var(--clr-primary);
     }
 

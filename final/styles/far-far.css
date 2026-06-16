@@ -68,10 +68,15 @@ header {
 
 .navigation a {
     padding: .1rem .3rem;
+
+    color: var(--clr-primary);
+
+    border: 2px solid transparent;
+    border-radius: .5rem;
 }
 
 .navigation a:hover {
-    color: var(--clr-secondary);
+    text-decoration: solid;
 }
 
 .navigation {
