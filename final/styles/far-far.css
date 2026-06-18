@@ -51,6 +51,19 @@ button:hover {
     scale: 1.1;
 }
 
+dialog {
+    background-color: var(--clr-background);
+
+    border: 2px solid var(--clr-secondary);
+    border-radius: 5px;
+
+    box-shadow: 0 0 10px #00000080;
+}
+
+::backdrop {
+    background-color: var(--clr-primary);
+}
+
 /* Header style */
 header {
     color: var(--clr-background);
