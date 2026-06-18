@@ -63,6 +63,16 @@ export const planets = [
         "name": "Kashyyyk",
         "activity": "Get a nice tan on the beach or get a legendary view from Kashyyyk's treetops.",
         "image": "images/kashyyyk-staging-area.webp"
+    },
+    {
+        "name": "Ryloth",
+        "activity": "Ride through canyons and across desert on a blurrg mount.",
+        "image": "images/ryloth.webp"
+    },
+    {
+        "name": "Umbara",
+        "activity": "This planet has a night life like no other... Just don't pet any of the bioluminescent flora or fauna.",
+        "image": "images/umbaran-hover-tanks.webp"
     }
 ];
 
