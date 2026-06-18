@@ -1,4 +1,5 @@
 import { fullDestinations } from './destination-data.mjs';
+import { modal } from './modal.mjs';
 
 const cards = document.querySelector('.card-container');
 
@@ -12,7 +13,6 @@ const buildDestinations = (planets) => {
         let activity = document.createElement('p');
         let climate = document.createElement('p');
         let terrain = document.createElement('p');
-        let bookLink = document.createElement('a');
         let book = document.createElement('button');
 
         // Set attributes and content
@@ -25,12 +25,12 @@ const buildDestinations = (planets) => {
         activity.innerHTML = `${planet.activity}`;
         climate.innerHTML = `Climate: ${planet.climate}`;
         terrain.innerHTML = `Terrain: ${planet.terrain}`;
-        bookLink.setAttribute('href', '#');
-        book.setAttribute('type', 'button');
+        book.type = 'button';
         book.innerHTML = `Book It!`;
 
-        // Append button to anchor tag
-        bookLink.appendChild(book);
+        book.addEventListener('click', () => {
+            modal.showModal();
+        });
 
         // Append elements to the card
         card.appendChild(name);
@@ -38,7 +38,7 @@ const buildDestinations = (planets) => {
         card.appendChild(activity);
         card.appendChild(climate);
         card.appendChild(terrain);
-        card.appendChild(bookLink);
+        card.appendChild(book);
 
         card.classList.add('card');
 
