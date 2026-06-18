@@ -41,13 +41,8 @@ const buildDestinations = (planets) => {
     });
 }
 
-// // Gets the destination data and displays the cards
-// export async function displayDestinations() {
-//     const weatherData = await getWeatherData();
-//     const forecastData = await getForecastData();
-
-//     const forecasts = formatForecast(forecastData);
-
-//     displayCurrent(weatherData);
-//     displayForecast(forecasts);
-// }
+// Gets the destination data and displays the cards
+export async function displayDestinations() {
+    const planets = await fullDestinations();
+    buildDestinations(planets);
+}
