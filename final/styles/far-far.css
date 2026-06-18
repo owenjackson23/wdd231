@@ -184,7 +184,7 @@ h1+p {
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: .5rem;
+    gap: 1rem;
 
     margin: 0 1rem;
 }
@@ -200,6 +200,13 @@ h1+p {
 
     padding-left: .5rem;
     padding-right: .5rem;
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    width: 98%;
+    max-width: 500px;
 }
 
 .card li {
