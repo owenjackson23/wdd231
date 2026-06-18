@@ -234,10 +234,25 @@ footer {
     margin: 0 auto;
 }
 
+footer p,
+footer a {
+    padding: .1rem .3rem;
+}
+
+.copyright a {
+    border: 2px solid transparent;
+    border-radius: .5rem;
+}
+
+.copyright a:hover {
+    border-left-color: var(--clr-primary);
+    border-right-color: var(--clr-primary);
+}
+
 .contact,
 .social-media,
 .copyright {
-    width: fit-content;
+    width: 80%;
 
     margin: 0 auto;
 }
