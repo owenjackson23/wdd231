@@ -116,3 +116,23 @@ export const fullDestinations = async () => {
     const apiData = await getPlanetData();
     return mergePlanets(planets, apiData);
 };
+
+// Filters out standard members from the data
+export const getSpotlightPlanets = async () => {
+    const data = await fullDestinations();
+    let spotlightPlanets = data;
+    spotlightPlanets = getRandomItems(spotlightPlanets, 3);
+    console.log(spotlightPlanets);
+    return spotlightPlanets;
+}
+
+function getRandomItems(array, numItems) {
+    const shuffled = [...array];
+
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled.slice(0, numItems);
+}

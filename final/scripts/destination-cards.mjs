@@ -1,4 +1,4 @@
-import { fullDestinations } from './destination-data.mjs';
+import { fullDestinations, getSpotlightPlanets } from './destination-data.mjs';
 import { modal } from './modal.mjs';
 
 const cards = document.querySelector('.card-container');
@@ -51,4 +51,9 @@ const buildDestinations = (planets) => {
 export async function displayDestinations() {
     const planets = await fullDestinations();
     buildDestinations(planets);
+}
+
+export async function displaySpotlights() {
+    const spotlightPlanets = await getSpotlightPlanets();
+    buildDestinations(spotlightPlanets);
 }
