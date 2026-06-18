@@ -198,6 +198,14 @@ main li {
     color: var(--clr-background);
 }
 
+.hero {
+    display: block;
+    margin: 0 auto;
+
+    width: 80%;
+    max-width: 900px;
+}
+
 /* Card style */
 .card-container {
     display: grid;
