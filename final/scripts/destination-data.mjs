@@ -37,7 +37,7 @@ export const planets = [
     {
         "name": "Naboo",
         "activity": "Enjoy fine dining and stunning views as you relax in Theed Palace.",
-        "image": ""
+        "image": "images/lake-country.webp"
     },
     {
         "name": "Coruscant",
