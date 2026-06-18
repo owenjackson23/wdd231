@@ -246,6 +246,7 @@ main li {
 
 .spotlights .card {
     margin: 0 auto;
+    width: 90%;
 }
 
 .card img {
@@ -253,6 +254,11 @@ main li {
     margin: 0 auto;
     width: 98%;
     max-width: 500px;
+}
+
+.card p {
+    width: 98%;
+    margin: 1rem auto;
 }
 
 .card li {
