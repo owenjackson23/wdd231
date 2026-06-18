@@ -7,4 +7,4 @@ displayDates();
 setupHamButton();
 
 displayDestinations();
-// modalHandling();
+modalHandling();

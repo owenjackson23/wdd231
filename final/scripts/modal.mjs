@@ -5,6 +5,6 @@ export function modalHandling() {
     modal.showModal();
 
     closeModal.addEventListener('click', () => {
-        modal.closest();
+        modal.close();
     });
 }
