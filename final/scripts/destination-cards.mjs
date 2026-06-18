@@ -10,6 +10,8 @@ const buildDestinations = (planets) => {
         let name = document.createElement('h2');
         let image = document.createElement('img');
         let activity = document.createElement('p');
+        let climate = document.createElement('p');
+        let terrain = document.createElement('p');
         let bookLink = document.createElement('a');
         let book = document.createElement('button');
 
@@ -21,6 +23,8 @@ const buildDestinations = (planets) => {
         image.setAttribute('width', '300');
         image.setAttribute('height', 'auto');
         activity.innerHTML = `${planet.activity}`;
+        climate.innerHTML = `Climate: ${planet.climate}`;
+        terrain.innerHTML = `Terrain: ${planet.terrain}`;
         bookLink.setAttribute('href', '#');
         book.setAttribute('type', 'button');
         book.innerHTML = `Book It!`;
@@ -32,6 +36,8 @@ const buildDestinations = (planets) => {
         card.appendChild(name);
         card.appendChild(image);
         card.appendChild(activity);
+        card.appendChild(climate);
+        card.appendChild(terrain);
         card.appendChild(bookLink);
 
         card.classList.add('card');
