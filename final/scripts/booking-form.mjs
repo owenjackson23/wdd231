@@ -22,18 +22,16 @@ export function fillDestinationSelect() {
 }
 
 export function saveBooking() {
-    if (!destination) {
-        destination = "No bookings found";
-    }
+    // if (!destination) {
+    //     destination = "No bookings found";
+    // }
 
     // Saves booking to localStorage
-    else {
-        bookForm.addEventListener("submit", () => {
-            const selectedDestination = destinationSelect.value;
+    bookForm.addEventListener("submit", () => {
+        const selectedDestination = destinationSelect.value;
 
-            localStorage.setItem("destination", selectedDestination);
-            destination = localStorage.getItem("destination");
-        });
-    }
+        localStorage.setItem("destination", selectedDestination);
+        destination = localStorage.getItem("destination");
+    });
     console.log(destination);
 }
