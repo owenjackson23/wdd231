@@ -337,6 +337,7 @@ main li {
     margin: 0 auto;
 }
 
+/* Modal Dialog styles */
 dialog {
     width: 80%;
 }
@@ -345,6 +346,11 @@ dialog {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+.receipt {
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Footer styles */
