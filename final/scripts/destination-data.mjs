@@ -112,12 +112,13 @@ function mergePlanets(localPlanets, apiPlanets) {
     }));
 }
 
+// Returns complete destination data
 export const fullDestinations = async () => {
     const apiData = await getPlanetData();
     return mergePlanets(planets, apiData);
 };
 
-// Filters out standard members from the data
+// Picks random destinations to spotlight
 export const getSpotlightPlanets = async () => {
     const data = await fullDestinations();
     let spotlightPlanets = data;
@@ -126,6 +127,13 @@ export const getSpotlightPlanets = async () => {
     return spotlightPlanets;
 }
 
+export const getPlanetNames = () => {
+    const planetNames = planets.filter(planet => planet.name);
+    console.log(planetNames);
+    return planetNames;
+}
+
+// Returns random items from an array
 function getRandomItems(array, numItems) {
     const shuffled = [...array];
 
