@@ -121,7 +121,13 @@
                 <textarea id="notes" name="notes" placeholder="Add any additional notes here."></textarea>
             </div>
 
-            <button id="bookVacation" type="submit">Book Vacation</button>
+            <button class="open-modal" id="bookVacation" type="button">Book Vacation</button>
+
+            <dialog id="confirm-modal">
+                <h2>Are you sure you want to book this vacation?</h2>
+                <button id="confirm-booking" type="submit">Yes, book it!</button>
+                <button id="close-modal" type="button">No, cancel it</button>
+            </dialog>
         </form>
     </main>
 
