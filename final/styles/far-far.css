@@ -7,7 +7,7 @@
     --font-body: 'Oxanium', 'Times New Roman', Times, serif;
 }
 
-/* Body style */
+/* Body styles */
 a {
     text-decoration: none;
     color: var(--clr-typeface);
@@ -63,7 +63,7 @@ dialog {
     background-color: var(--clr-primary);
 }
 
-/* Header style */
+/* Header styles */
 header {
     color: var(--clr-background);
     background-color: var(--clr-primary);
@@ -176,7 +176,7 @@ header {
     content: '×';
 }
 
-/* Main style */
+/* Main styles */
 main {
     margin: 2rem 0;
 }
@@ -211,7 +211,7 @@ main li {
     padding: 0 1rem;
 }
 
-/* Card style */
+/* Card styles */
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -268,7 +268,9 @@ main li {
     margin-bottom: 1rem;
 }
 
-/* Footer style */
+/* Form styles */
+
+/* Footer styles */
 footer {
     display: flex;
     flex-direction: column;
@@ -314,44 +316,4 @@ footer a {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-}
-
-/* Color Scheme style */
-#clr-prim,
-#clr-sec,
-#clr-back,
-#clr-type {
-    border: 2px solid var(--clr-typeface);
-    border-radius: .5rem;
-
-    padding: .1rem .3rem;
-}
-
-#clr-prim {
-    background-color: var(--clr-primary);
-    color: var(--clr-background);
-
-    font-size: 24px;
-}
-
-#clr-sec {
-    background-color: var(--clr-secondary);
-    color: var(--clr-typeface);
-
-    font-size: 24px;
-}
-
-#clr-back {
-    background-color: var(--clr-background);
-    color: var(--clr-typeface);
-
-    font-size: 24px;
-}
-
-#clr-type {
-    background-color: var(--clr-typeface);
-    color: var(--clr-background);
-    border-color: var(--clr-background);
-
-    font-size: 24px;
 }
