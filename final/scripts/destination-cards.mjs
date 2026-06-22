@@ -13,6 +13,7 @@ const buildDestinations = (planets) => {
         let activity = document.createElement('p');
         let climate = document.createElement('p');
         let terrain = document.createElement('p');
+        let bookLink = document.createElement('a');
         let book = document.createElement('button');
 
         // Set attributes and content
@@ -25,12 +26,12 @@ const buildDestinations = (planets) => {
         activity.innerHTML = `${planet.activity}`;
         climate.innerHTML = `Climate: ${planet.climate}`;
         terrain.innerHTML = `Terrain: ${planet.terrain}`;
+        bookLink.setAttribute('href', 'booking.html');
         book.type = 'button';
         book.innerHTML = `Book It!`;
 
-        book.addEventListener('click', () => {
-            modal.showModal();
-        });
+        // Append button to anchor
+        bookLink.appendChild(book);
 
         // Append elements to the card
         card.appendChild(name);
@@ -38,7 +39,7 @@ const buildDestinations = (planets) => {
         card.appendChild(activity);
         card.appendChild(climate);
         card.appendChild(terrain);
-        card.appendChild(book);
+        card.appendChild(bookLink);
 
         card.classList.add('card');
 

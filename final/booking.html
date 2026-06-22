@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Far, Far Away Galactic Vacations</title>
+    <meta name="description" content="A page for booking vacations for Far, Far Away Galactic Vacations">
+    <meta name="author" content="Owen Jackson">
+
+    <meta property="og:title" content="Booking | Far, Far Away Galactic Vacations">
+    <meta property="og:description"
+        content="A page for booking vacations for Far, Far Away Galactic Vacations. Book vacations and view current bookings">
+    <meta property="og:image" content="https://owenjackson23.github.io/wdd231/final/images/booking-screenshot.png">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://owenjackson23.github.io/wdd231/final/booking.html">
+
+    <link rel="icon" href="images/far-far.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/far-far.css">
+    <link rel="stylesheet" href="styles/far-far-large.css">
+
+    <script type="module" src="scripts/booking.mjs"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/far-far-logo.svg" alt="Far, Far Vacations Logo" width="64" loading="lazy">
+            <span>Far, Far Away Galactic Vacations</span>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li class="current"><a href="#">Booking</a></li>
+            </ul>
+        </nav>
+        <a id="menu" href="#" aria-label="Open navigation menu"></a>
+    </header>
+
+    <main>
+        <h1>Booking</h1>
+        <section class="about">
+            <h2>Our Vacation Packages</h2>
+            <h3>Chromium</h3>
+            <ul>
+                <li>Standard amenities and lodging</li>
+                <li>Complimentary breakfasts</li>
+            </ul>
+
+            <h3>Aurodium</h3>
+            <ul>
+                <li>Upgraded amenities and lodging</li>
+                <li>Complimentary breakfasts</li>
+                <li>Exclusive dining opportunities</li>
+            </ul>
+
+            <h3>Kyber</h3>
+            <ul>
+                <li>Luxury amenities and lodging</li>
+                <li>Complimentary breakfasts</li>
+                <li>Exclusive dining opportunities</li>
+                <li>Free guided tours</li>
+            </ul>
+        </section>
+
+        <form id="book-form" action="bookings.html" method="get">
+            <h2>Book Vacation</h2>
+            <div class="user">
+                <label for="name">*Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="select-destination">
+                <label for="destination">*Vacation Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="" disabled selected>Select a destination</option>
+
+                </select>
+            </div>
+
+            <fieldset>
+                <legend>*Choose a Vacation Package</legend>
+                <div class="packages">
+                    <div>
+                        <input type="radio" id="chromium" name="package" value="1" required>
+                        <label for="padawan">Chromium (standard)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="aurodium" name="package" value="2" required>
+                        <label for="aurodium">Aurodium (upgraded)</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="kyber" name="package" value="3" required>
+                        <label for="kyber">Kyber (luxury)</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <section class="arrive-depart">
+                <div class="arrival-date">
+                    <label for="arrive">*Date of Arrival:</label>
+                    <input type="date" id="arrive" name="arrive" required>
+                </div>
+                <div class="departure-date">
+                    <label for="depart">*Date of Departure:</label>
+                    <input type="date" id="depart" name="depart" required>
+                </div>
+            </section>
+
+            <div class="notes">
+                <label for="notes">Additional Comments:</label>
+                <textarea id="notes" name="notes" placeholder="Add any additional notes here."></textarea>
+            </div>
+
+            <button id="bookVacation" type="submit">Book Vacation</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p><strong>Far, Far Away Galactic Vacations</strong></p>
+            <p>info@farfarvacations.com</p>
+            <p>(123) 066-1977</p>
+        </div>
+        <nav class="social-media">
+            <a href="https://www.facebook.com">
+                <img src="images/facebook-logo.svg" alt="Facebook Logo" width="64" loading="lazy">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube-logo.svg" alt="YouTube Logo" width="64" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkedin-logo.svg" alt="LinkedIn Logo" width="64" loading="lazy">
+            </a>
+        </nav>
+        <div class="copyright">
+            <p>WDD231 Final Project</p>
+            <p>Owen Jackson</p>
+            <a href="attributions.html">Attributions</a>
+            <p>&copy;<span id="currentYear"></span> Far, Far Away Galactic Vacations</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

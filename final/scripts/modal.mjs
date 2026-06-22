@@ -1,5 +1,5 @@
-export const modal = document.getElementById('bookModal');
-const closeModal = document.getElementById('closeModal');
+export const modal = document.getElementById('book-modal');
+const closeModal = document.getElementById('book-vacation');
 
 export function modalHandling() {
     closeModal.addEventListener('click', () => {
