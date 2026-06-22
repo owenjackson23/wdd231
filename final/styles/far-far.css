@@ -269,6 +269,73 @@ main li {
 }
 
 /* Form styles */
+#book-form {
+    border: 2px solid var(--clr-secondary);
+
+    padding: 0 1rem 1rem;
+
+    display: grid;
+    grid-template-areas:
+        "heading"
+        "name"
+        "destination"
+        "packages"
+        "arrival"
+        "depart"
+        "comments-label"
+        "comments-box"
+        "button";
+
+    gap: 2rem;
+}
+
+#book-form h2 {
+    grid-area: heading;
+}
+
+.user {
+    grid-area: name;
+}
+
+.select-destination {
+    grid-area: destination;
+}
+
+#book-form fieldset {
+    grid-area: packages;
+}
+
+.arrival-date {
+    grid-area: arrival;
+}
+
+.departure-date {
+    grid-area: depart;
+}
+
+.notes label {
+    grid-area: comments-label;
+}
+
+.notes textarea {
+    grid-area: comments-box;
+    width: 80%;
+    height: 100px;
+}
+
+.open-modal {
+    grid-area: button;
+}
+
+dialog {
+    width: 80%;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
 
 /* Footer styles */
 footer {
