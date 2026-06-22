@@ -127,12 +127,6 @@ export const getSpotlightPlanets = async () => {
     return spotlightPlanets;
 }
 
-export const getPlanetNames = () => {
-    const planetNames = planets.filter(planet => planet.name);
-    console.log(planetNames);
-    return planetNames;
-}
-
 // Returns random items from an array
 function getRandomItems(array, numItems) {
     const shuffled = [...array];

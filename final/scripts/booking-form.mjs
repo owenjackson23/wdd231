@@ -1,4 +1,4 @@
-import { getPlanetNames } from "./destination-data.mjs";
+import { planets } from "./destination-data.mjs";
 
 const bookForm = document.getElementById("book-form");
 const destinationSelect = document.getElementById("destination-select");
@@ -11,11 +11,11 @@ let destination = localStorage.getItem("destination");
 
 // Adds planets to select
 export function fillDestinationSelect() {
-    getPlanetNames().forEach(planet => {
+    planets.forEach(planet => {
         const option = document.createElement("option");
 
-        option.value = planet;
-        option.innerHTML = planet;
+        option.value = planet.name;
+        option.innerHTML = planet.name;
 
         destinationSelect.appendChild(option);
     });
