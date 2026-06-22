@@ -270,9 +270,14 @@ main li {
 
 /* Form styles */
 #book-form {
-    border: 2px solid var(--clr-secondary);
+    width: 70%;
 
-    padding: 0 1rem 1rem;
+    margin: 2rem auto;
+
+    border: 3px solid var(--clr-secondary);
+    border-radius: .5rem;
+
+    padding: 0 2rem 1rem;
 
     display: grid;
     grid-template-areas:
@@ -280,10 +285,8 @@ main li {
         "name"
         "destination"
         "packages"
-        "arrival"
-        "depart"
-        "comments-label"
-        "comments-box"
+        "arrive-depart"
+        "comments"
         "button";
 
     gap: 2rem;
@@ -295,6 +298,7 @@ main li {
 
 .user {
     grid-area: name;
+    margin: 0 auto;
 }
 
 .select-destination {
@@ -305,26 +309,32 @@ main li {
     grid-area: packages;
 }
 
-.arrival-date {
-    grid-area: arrival;
+.arrive-depart {
+    grid-area: arrive-depart;
+
+    width: 300px;
 }
 
-.departure-date {
-    grid-area: depart;
-}
-
-.notes label {
-    grid-area: comments-label;
+.notes {
+    grid-area: comments;
 }
 
 .notes textarea {
-    grid-area: comments-box;
-    width: 80%;
-    height: 100px;
+    width: 100%;
+    height: 150px;
 }
 
 .open-modal {
     grid-area: button;
+    width: 150px;
+}
+
+.user,
+.select-destination,
+.arrive-depart,
+.notes,
+.open-modal {
+    margin: 0 auto;
 }
 
 dialog {

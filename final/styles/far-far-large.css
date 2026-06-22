@@ -1,54 +1,13 @@
-@media (min-width: 760px) {
+@media (min-width: 900px) {
 
-    /* Footer */
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    .copyright {
-        margin-left: 1rem;
-    }
-
-    /* Navigation */
-    .navigation {
-        position: static;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .navigation ul {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-
-        background-color: var(--clr-background);
-
-        border: 2px solid var(--clr-secondary);
-        border-radius: .5rem;
-    }
-
-    .navigation li {
-        display: block;
-    }
-
-    .navigation a {
-        padding: .1rem .3rem;
-
-        font-size: 1.2rem;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    /* Card Styles */
-    .spotlights {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
+    /* Form */
+    #book-form {
+        grid-template-areas:
+            "heading heading"
+            "name name"
+            "destination destination"
+            "packages arrive-depart"
+            "comments comments"
+            "button button";
     }
 }
