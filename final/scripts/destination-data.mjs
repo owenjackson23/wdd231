@@ -1,4 +1,4 @@
-export const planets = [
+const planets = [
     {
         "name": "Tatooine",
         "activity": "Cheer for your favorite racer at the Mos Espa Podrace.",
@@ -76,6 +76,8 @@ export const planets = [
     }
 ];
 
+export const sortedPlanets = sortAlphabetical(planets, "name");
+
 const url = "https://swapi.info/api/planets";
 
 // Fetches data
@@ -91,6 +93,13 @@ const getPlanetData = async () => {
     }
 }
 
+// Sorts object array items alphabetically
+function sortAlphabetical(array, key) {
+    return array.toSorted((a, b) =>
+        String(a[key]).localeCompare(String(b[key]), undefined)
+    );
+}
+
 // Combines planets array and api data into one array
 function mergePlanets(localPlanets, apiPlanets) {
     // Return local planet array if api fails
@@ -99,13 +108,15 @@ function mergePlanets(localPlanets, apiPlanets) {
     // convert api data to an array
     const apiArray = apiPlanets.results || apiPlanets;
 
+    // sort api data array
+    const sortedApiArray = sortAlphabetical(apiArray, "name");
+
     const apiMap = Object.fromEntries(
-        apiArray.map(planet => [planet.name.toLowerCase(), planet])
+        sortedApiArray.map(planet => [planet.name.toLowerCase(), planet])
     );
 
     // merge arrays, matching them using "name" as the key
     return localPlanets.map(local => ({
-        // const match = apiArray.find(api => api.name.toLowerCase() === local.name.toLowerCase());
 
         ...local,
         ...(apiMap[local.name.toLowerCase()] || {})
@@ -115,7 +126,8 @@ function mergePlanets(localPlanets, apiPlanets) {
 // Returns complete destination data
 export const fullDestinations = async () => {
     const apiData = await getPlanetData();
-    return mergePlanets(planets, apiData);
+    console.log(mergePlanets(sortedPlanets, apiData));
+    return mergePlanets(sortedPlanets, apiData);
 };
 
 // Picks random destinations to spotlight
